@@ -1,0 +1,271 @@
+/* WooCommerce Conditional Logic - Frontend Styles */
+
+.wcl-product-options {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.wcl-option-set {
+    margin-bottom: 30px;
+}
+
+.wcl-option-set-title {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.wcl-option-set-description {
+    margin-bottom: 20px;
+    color: #666;
+    font-style: italic;
+}
+
+.wcl-option {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.wcl-option:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.wcl-option-label {
+    margin-bottom: 10px;
+}
+
+.wcl-option-label label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.wcl-option-label .required {
+    color: #d00;
+}
+
+.wcl-option-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.wcl-option-input {
+    /* Option input styles */
+}
+
+/* Checkbox styles */
+.wcl-checkbox-label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.wcl-checkbox-label input {
+    margin-right: 8px;
+}
+
+.wcl-checkbox-text {
+    vertical-align: middle;
+}
+
+/* Radio styles */
+.wcl-radio-label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.wcl-radio-label input {
+    margin-right: 8px;
+}
+
+.wcl-radio-text {
+    vertical-align: middle;
+}
+
+/* Dropdown styles */
+.wcl-dropdown {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Swatch styles */
+.wcl-swatches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.wcl-swatch-label {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.wcl-swatch-label input {
+    display: none;
+}
+
+.wcl-swatch {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    background-size: cover;
+    background-position: center;
+    transition: border-color 0.3s ease;
+}
+
+.wcl-swatch-label input:checked + .wcl-swatch {
+    border-color: #0073aa;
+    box-shadow: 0 0 0 2px rgba(0, 115, 170, 0.3);
+}
+
+.wcl-swatch-label-text {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Button styles */
+.wcl-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.wcl-button-label {
+    cursor: pointer;
+}
+
+.wcl-button-label input {
+    display: none;
+}
+
+.wcl-button {
+    padding: 8px 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.wcl-button-label input:checked + .wcl-button {
+    border-color: #0073aa;
+    background: #0073aa;
+    color: #fff;
+}
+
+.wcl-button:hover {
+    border-color: #0073aa;
+}
+
+/* Text input styles */
+.wcl-text-input,
+.wcl-number-input,
+.wcl-date-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.wcl-textarea-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: vertical;
+}
+
+.wcl-file-input {
+    max-width: 300px;
+}
+
+/* Price display */
+.wcl-price {
+    color: #666;
+    font-weight: normal;
+}
+
+/* Hidden elements */
+.wcl-option.wcl-hidden {
+    display: none !important;
+}
+
+.wcl-checkbox-label.wcl-hidden,
+.wcl-radio-label.wcl-hidden,
+.wcl-swatch-label.wcl-hidden,
+.wcl-button-label.wcl-hidden {
+    display: none !important;
+}
+
+.wcl-dropdown option.wcl-hidden {
+    display: none !important;
+}
+
+/* Loading state */
+.wcl-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Error states */
+.wcl-option.wcl-error .wcl-option-input {
+    border-left: 3px solid #d00;
+    padding-left: 10px;
+}
+
+.wcl-error-message {
+    color: #d00;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .wcl-swatches {
+        justify-content: center;
+    }
+    
+    .wcl-buttons {
+        flex-direction: column;
+    }
+    
+    .wcl-button {
+        text-align: center;
+    }
+    
+    .wcl-text-input,
+    .wcl-number-input,
+    .wcl-date-input,
+    .wcl-dropdown {
+        max-width: 100%;
+    }
+    
+    .wcl-textarea-input {
+        max-width: 100%;
+    }
+}

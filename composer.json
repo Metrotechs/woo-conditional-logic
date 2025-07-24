@@ -1,0 +1,39 @@
+{
+  "name": "yourname/woocommerce-conditional-logic",
+  "description": "Add conditional logic to WooCommerce variable products with advanced product options and rules",
+  "version": "1.0.0",
+  "type": "wordpress-plugin",
+  "keywords": [
+    "wordpress",
+    "woocommerce",
+    "conditional-logic",
+    "product-options",
+    "ecommerce"
+  ],
+  "homepage": "https://github.com/your-username/woo-conditional-logic",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Your Name",
+      "email": "your.email@example.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0",
+    "squizlabs/php_codesniffer": "*",
+    "wp-coding-standards/wpcs": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "WCL\\": "includes/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "cs-check": "phpcs --standard=WordPress .",
+    "cs-fix": "phpcbf --standard=WordPress ."
+  }
+}

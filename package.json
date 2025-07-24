@@ -1,0 +1,38 @@
+{
+  "name": "woocommerce-conditional-logic",
+  "version": "1.0.0",
+  "description": "Add conditional logic to WooCommerce variable products with advanced product options and rules",
+  "main": "assets/js/frontend.js",
+  "scripts": {
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "echo 'CSS build completed'",
+    "build:js": "echo 'JS build completed'",
+    "watch": "npm run watch:css & npm run watch:js",
+    "watch:css": "echo 'Watching CSS files...'",
+    "watch:js": "echo 'Watching JS files...'",
+    "lint": "eslint assets/js/",
+    "test": "echo 'No tests specified'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/woo-conditional-logic.git"
+  },
+  "keywords": [
+    "wordpress",
+    "woocommerce",
+    "conditional-logic",
+    "product-options",
+    "ecommerce",
+    "jquery"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "@wordpress/eslint-plugin": "^17.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}

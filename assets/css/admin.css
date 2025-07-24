@@ -1,0 +1,380 @@
+/* WooCommerce Conditional Logic - Admin Styles */
+
+.wcl-admin-page {
+    margin: 20px 0;
+}
+
+.wcl-form-table {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.wcl-form-table th,
+.wcl-form-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccd0d4;
+    vertical-align: top;
+}
+
+.wcl-form-table th {
+    background: #f9f9f9;
+    font-weight: 600;
+    width: 200px;
+}
+
+.wcl-section-header {
+    background: #0073aa;
+    color: #fff;
+    padding: 15px 20px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wcl-option-item,
+.wcl-rule-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 20px;
+    position: relative;
+}
+
+.wcl-option-header,
+.wcl-rule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.wcl-option-title,
+.wcl-rule-title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.wcl-option-actions,
+.wcl-rule-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.wcl-btn {
+    padding: 6px 12px;
+    border: 1px solid #ccd0d4;
+    border-radius: 3px;
+    background: #f6f7f7;
+    color: #2c3338;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 1.4;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.wcl-btn:hover {
+    background: #fff;
+    border-color: #8c8f94;
+    color: #1d2327;
+}
+
+.wcl-btn-primary {
+    background: #2271b1;
+    border-color: #2271b1;
+    color: #fff;
+}
+
+.wcl-btn-primary:hover {
+    background: #135e96;
+    border-color: #135e96;
+    color: #fff;
+}
+
+.wcl-btn-danger {
+    background: #d63638;
+    border-color: #d63638;
+    color: #fff;
+}
+
+.wcl-btn-danger:hover {
+    background: #b32d2e;
+    border-color: #b32d2e;
+    color: #fff;
+}
+
+.wcl-form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    align-items: start;
+}
+
+.wcl-form-field {
+    flex: 1;
+}
+
+.wcl-form-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.wcl-form-field input,
+.wcl-form-field select,
+.wcl-form-field textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.wcl-form-field input:focus,
+.wcl-form-field select:focus,
+.wcl-form-field textarea:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: none;
+}
+
+.wcl-form-field-small {
+    max-width: 150px;
+}
+
+.wcl-form-field-medium {
+    max-width: 300px;
+}
+
+.wcl-option-values {
+    margin-top: 20px;
+}
+
+.wcl-value-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.wcl-value-drag-handle {
+    cursor: move;
+    color: #999;
+    display: flex;
+    align-items: center;
+}
+
+.wcl-value-fields {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.wcl-value-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.wcl-color-picker {
+    width: 50px !important;
+    height: 35px !important;
+    padding: 2px !important;
+    border-radius: 4px;
+}
+
+.wcl-image-preview {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+}
+
+.wcl-image-preview img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.wcl-rules-section {
+    margin-top: 30px;
+}
+
+.wcl-rule-condition,
+.wcl-rule-action {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.wcl-condition-group {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.wcl-condition-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f6f7f7;
+    border-radius: 4px;
+}
+
+.wcl-condition-item:last-child {
+    margin-bottom: 0;
+}
+
+.wcl-sortable {
+    min-height: 50px;
+}
+
+.wcl-sortable-placeholder {
+    background: #f0f0f0;
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.wcl-drag-handle {
+    cursor: move;
+    color: #999;
+    margin-right: 10px;
+}
+
+.wcl-collapse-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 14px;
+    color: #2271b1;
+    text-decoration: underline;
+}
+
+.wcl-collapse-toggle:hover {
+    color: #135e96;
+}
+
+.wcl-collapsed .wcl-collapsible-content {
+    display: none;
+}
+
+.wcl-add-new-section {
+    text-align: center;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.wcl-add-new-section:hover {
+    border-color: #2271b1;
+    background: #f6f7f7;
+}
+
+.wcl-status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.wcl-status-active {
+    background: #00a32a;
+}
+
+.wcl-status-inactive {
+    background: #dba617;
+}
+
+.wcl-loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #666;
+}
+
+.wcl-notice {
+    padding: 12px;
+    border-left: 4px solid;
+    margin: 15px 0;
+    background: #fff;
+}
+
+.wcl-notice-success {
+    border-left-color: #00a32a;
+    background: #f0f6fc;
+}
+
+.wcl-notice-error {
+    border-left-color: #d63638;
+    background: #fcf0f1;
+}
+
+.wcl-notice-warning {
+    border-left-color: #dba617;
+    background: #fcf9e8;
+}
+
+.wcl-notice-info {
+    border-left-color: #72aee6;
+    background: #f0f6fc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .wcl-form-row {
+        flex-direction: column;
+    }
+    
+    .wcl-value-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .wcl-value-fields {
+        flex-direction: column;
+    }
+    
+    .wcl-condition-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .wcl-option-actions,
+    .wcl-rule-actions {
+        flex-direction: column;
+    }
+}
